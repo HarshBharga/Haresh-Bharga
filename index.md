@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <body>
 <h1>Haresh Bharga</h1>
