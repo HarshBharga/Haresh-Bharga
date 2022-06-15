@@ -2,10 +2,10 @@
 <center>
   <h1>Contact Me</h1>
   <hr>
-<a href="tel:+91 9408669952"><i style="color:#53BF9D; padding-right:5px; font-size:20px;" class="fa-solid fa-phone"></i></a>
-<a href="mailto:hpbharga@gmail.com"><i style="color:#FFC54D; padding-right:5px; font-size:20px;" class="fa-solid fa-envelope"></i></a>
-<a href="https://www.linkedin.com/in/haresh-bharga-ab78b443"><i style="color:#0077b5; padding-right:5px; font-size:20px;" class="fa-brands fa-linkedin"></i></a>
-<a href="https://wa.me/919408669952?text=Hello%20Haresh!"><i style="color:#25D366; padding-right:5px; font-size:20px;" class="fa-brands fa-whatsapp"></i></a>
+<a href="tel:+91 9408669952"><i style="color:#53BF9D; padding-right:25px; font-size:25px;" class="fa-solid fa-phone"></i></a>
+<a href="mailto:hpbharga@gmail.com"><i style="color:#FFC54D; padding-right:25px; font-size:25px;" class="fa-solid fa-envelope"></i></a>
+<a href="https://www.linkedin.com/in/haresh-bharga-ab78b443"><i style="color:#0077b5; padding-right:25px; font-size:25px;" class="fa-brands fa-linkedin"></i></a>
+<a href="https://wa.me/919408669952?text=Hello%20Haresh!"><i style="color:#25D366; padding-right:25px; font-size:25px;" class="fa-brands fa-whatsapp"></i></a>
 </center>
 
 
