@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <center><h1>Contact Me</h1></center>
-<a href="tel:+91 9408669952"><i style="#53BF9D" class="fa-solid fa-circle-phone"></i></a>
-<a href="mailto:hpbharga@gmail.com"><i style="#FFC54D" class="fa-solid fa-circle-envelope"></i></a>
+<a href="tel:+91 9408669952"><i style="#53BF9D" class="fa-solid fa-phone"></i></a>
+<a href="mailto:hpbharga@gmail.com"><i style="#FFC54D" class="fa-solid fa-envelope"></i></a>
 <a href="https://www.linkedin.com/in/haresh-bharga-ab78b443"><i style="#0077b5" class="fa-brands fa-linkedin"></i></i></a>
 <a href="https://wa.me/919408669952?text=Hello%20Haresh!"><i style="#25D366" class="fa-brands fa-whatsapp"></i></i></i></a>
 
