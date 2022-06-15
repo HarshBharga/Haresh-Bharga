@@ -1,3 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<center><h1>Contact Me</h1></center>
+<i class="fa-duotone fa-phone"></i> +91 9408669952
+hpbharga@gmail.com
+
+https://www.linkedin.com/in/haresh-bharga-ab78b443
+<hr>
 <center><h1>Portfolio</h1></center>
 <hr>
 <h2>INDLSP</h2>
