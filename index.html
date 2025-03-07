@@ -7,38 +7,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white p-6">
-    <!-- Hero Section -->
-    <div class="text-center mt-20">
-        <h1 class="text-4xl font-bold">Hello, I'm <span class="text-blue-400">Your Name</span></h1>
-        <p class="text-lg mt-2">Full Stack Developer | Tech Enthusiast</p>
-    </div>
+    <div class="max-w-4xl mx-auto">
+        <!-- Profile Section -->
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+            <h1 class="text-3xl font-bold">Your Name</h1>
+            <p class="text-gray-400 mt-2">Software Developer</p>
+            <p class="mt-2">Passionate about building scalable web applications.</p>
+            <ul class="mt-3">
+                <li><strong>Skills:</strong> Full Stack Development, Cloud Computing</li>
+                <li><strong>Languages:</strong> JavaScript, PHP, Python</li>
+                <li><strong>Location:</strong> Your City, Country</li>
+            </ul>
+        </div>
 
-    <!-- Projects Section -->
-    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-6 rounded-2xl">
-            <h2 class="text-xl font-semibold">Project One</h2>
-            <p class="text-gray-400 mt-2">A cool project description.</p>
-            <a href="#" class="text-blue-400 hover:underline block mt-3">View Project →</a>
+        <!-- Experience Section -->
+        <div class="mt-8 bg-gray-800 p-6 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-bold">Experience</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold">Company Name</h3>
+                <p class="text-gray-400">Duration: 2020 - Present</p>
+                <p class="text-gray-400">Role: Software Developer</p>
+                <p class="mt-2">Developing and maintaining web applications using modern technologies.</p>
+            </div>
         </div>
-        <div class="bg-gray-800 p-6 rounded-2xl">
-            <h2 class="text-xl font-semibold">Project Two</h2>
-            <p class="text-gray-400 mt-2">Another awesome project.</p>
-            <a href="#" class="text-blue-400 hover:underline block mt-3">View Project →</a>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-2xl">
-            <h2 class="text-xl font-semibold">Project Three</h2>
-            <p class="text-gray-400 mt-2">Something interesting here.</p>
-            <a href="#" class="text-blue-400 hover:underline block mt-3">View Project →</a>
-        </div>
-    </div>
 
-    <!-- Contact Section -->
-    <div class="text-center mt-20">
-        <h2 class="text-2xl font-bold">Get in Touch</h2>
-        <div class="flex justify-center space-x-4 mt-4">
-            <a href="#" class="text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.87 8.79 8.69 8.98V15.4h-2.6v-3.4h2.6V9.68c0-2.56 1.5-4 3.8-4 .78 0 1.6.1 2.34.14v2.6h-1.5c-1.2 0-1.58.7-1.58 1.6v2h2.94l-.4 3.4h-2.54v6.6C18.13 20.79 22 16.84 22 12c0-5.52-4.48-10-10-10z" /></svg></a>
-            <a href="#" class="text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 00-12 0c0 4.41 4.6 8.6 6 9.6 1.4-1 6-5.19 6-9.6zm-4 0a2 2 0 11-4 0 2 2 0 014 0z" /></svg></a>
-            <a href="#" class="text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h4M8 12H4m8 8v-4m0-8V4m6.364 14.364l-2.828-2.828M6.364 6.364L3.536 3.536" /></svg></a>
+        <!-- Projects Section -->
+        <div class="mt-8 bg-gray-800 p-6 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-bold">Projects</h2>
+            <div class="mt-4">
+                <img src="project-image.jpg" alt="Project Image" class="w-full rounded-lg">
+                <h3 class="text-xl font-semibold mt-2">Project Name</h3>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">Laravel</span>
+                    <span class="bg-yellow-500 text-white px-2 py-1 rounded text-sm">JavaScript</span>
+                    <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">Node.js</span>
+                    <span class="bg-gray-500 text-white px-2 py-1 rounded text-sm">MySQL</span>
+                </div>
+                <p class="mt-2">A brief description of the project and its functionalities.</p>
+                <a href="#" class="text-blue-400 hover:underline block mt-3">View Project →</a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="mt-8 bg-gray-800 p-6 rounded-2xl shadow-lg text-center">
+            <h2 class="text-2xl font-bold">Contact</h2>
+            <p class="mt-2">Email: your.email@example.com</p>
+            <p>Call: +123 456 7890</p>
+            <p>WhatsApp: +123 456 7890</p>
+            <p>LinkedIn: <a href="#" class="text-blue-400 hover:underline">Your Profile</a></p>
         </div>
     </div>
 </body>
