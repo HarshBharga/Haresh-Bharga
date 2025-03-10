@@ -15,15 +15,34 @@
             font-family: 'Inter', sans-serif;
         }
         .gradient-bg {
-            background: linear-gradient(to right, #4f46e5, #3b82f6);
+            background: linear-gradient(to right, #2c3e50, #3f5973);
         }
         .project-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+        .accent-color {
+            color: #537895;
+        }
+        .tag-bg-1 {
+            background-color: #e8f4f8;
+            color: #537895;
+        }
+        .tag-bg-2 {
+            background-color: #f0f4f8;
+            color: #5e6e82;
+        }
+        .tag-bg-3 {
+            background-color: #edf2f7;
+            color: #475569;
+        }
+        .tag-bg-4 {
+            background-color: #f2f5f9;
+            color: #64748b;
+        }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-slate-50 font-sans">
     <div class="container mx-auto p-6 max-w-5xl bg-white shadow-xl my-8 rounded-xl">
         <!-- Header with gradient -->
         <header class="rounded-t-lg pb-6 mb-6">
@@ -48,42 +67,42 @@
 
         <!-- Skills Section -->
         <section class="mb-8 px-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                <i class="fas fa-tools text-indigo-600 mr-2"></i> Skills
+            <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+                <i class="fas fa-tools accent-color mr-2"></i> Skills
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
-                    <h3 class="font-semibold text-gray-700 flex items-center mb-3">
-                        <i class="fas fa-server text-indigo-500 mr-2"></i> Backend Development
+                <div class="bg-slate-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="font-semibold text-slate-700 flex items-center mb-3">
+                        <i class="fas fa-server accent-color mr-2"></i> Backend Development
                     </h3>
-                    <ul class="space-y-1 text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> PHP (Laravel)</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Node.js (Express.js)</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> ORM: Sequelize, Eloquent</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> MySQL, PostgreSQL, MongoDB</li>
+                    <ul class="space-y-1 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> PHP (Laravel)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> Node.js (Express.js)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> ORM: Sequelize, Eloquent</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> MySQL, PostgreSQL, MongoDB</li>
                     </ul>
                 </div>
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
-                    <h3 class="font-semibold text-gray-700 flex items-center mb-3">
-                        <i class="fas fa-laptop-code text-indigo-500 mr-2"></i> Frontend Development
+                <div class="bg-slate-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="font-semibold text-slate-700 flex items-center mb-3">
+                        <i class="fas fa-laptop-code accent-color mr-2"></i> Frontend Development
                     </h3>
-                    <ul class="space-y-1 text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> JavaScript (ES6+)</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> jQuery / AJAX</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Alpine.js</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Vue.js</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> HTML / CSS</li>
+                    <ul class="space-y-1 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> JavaScript (ES6+)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> jQuery / AJAX</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> Alpine.js</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> Vue.js</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> HTML / CSS</li>
                     </ul>
                 </div>
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
-                    <h3 class="font-semibold text-gray-700 flex items-center mb-3">
-                        <i class="fas fa-code-branch text-indigo-500 mr-2"></i> UI & Deployment
+                <div class="bg-slate-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="font-semibold text-slate-700 flex items-center mb-3">
+                        <i class="fas fa-code-branch accent-color mr-2"></i> UI & Deployment
                     </h3>
-                    <ul class="space-y-1 text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Bootstrap, Tailwind CSS</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Git</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> FTP / cPanel / SSH</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> AWS</li>
+                    <ul class="space-y-1 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> Bootstrap, Tailwind CSS</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> Git</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> FTP / cPanel / SSH</li>
+                        <li class="flex items-center"><i class="fas fa-check text-slate-500 mr-2 text-xs"></i> AWS</li>
                     </ul>
                 </div>
             </div>
@@ -91,38 +110,38 @@
 
         <!-- Experience Section -->
         <section class="mb-8 px-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                <i class="fas fa-briefcase text-indigo-600 mr-2"></i> Work Experience
+            <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+                <i class="fas fa-briefcase accent-color mr-2"></i> Work Experience
             </h2>
             
             <!-- Current Role -->
             <div class="mb-8">
-                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
-                    <h3 class="text-xl font-semibold text-gray-800">PHP Developer</h3>
-                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>March 2024 - Present</p>
+                <div class="flex justify-between items-start border-l-4 border-slate-400 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-slate-800">PHP Developer</h3>
+                    <p class="text-slate-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>March 2024 - Present</p>
                 </div>
-                <p class="text-gray-700 font-medium flex items-center ml-4 mt-1">
-                    <i class="fas fa-building mr-2 text-gray-500"></i> Economic Impact Catalyst, Gandhinagar
+                <p class="text-slate-700 font-medium flex items-center ml-4 mt-1">
+                    <i class="fas fa-building mr-2 text-slate-500"></i> Economic Impact Catalyst, Gandhinagar
                 </p>
-                <ul class="space-y-1 text-gray-600 mt-3 ml-4">
+                <ul class="space-y-1 text-slate-600 mt-3 ml-4">
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Developing and optimizing web applications and APIs using Laravel, Node.js, and Vue.js</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Managing database structures and cloud deployments for high-performance applications</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Collaborating with cross-functional teams to improve product scalability and user experience</span>
                     </li>
                 </ul>
                 
                 <!-- Project Section -->
                 <div class="mt-4 ml-4">
-                    <h4 class="font-semibold text-gray-700 flex items-center">
-                        <i class="fas fa-project-diagram text-indigo-500 mr-2"></i> Project Highlight
+                    <h4 class="font-semibold text-slate-700 flex items-center">
+                        <i class="fas fa-project-diagram accent-color mr-2"></i> Project Highlight
                     </h4>
                     <div class="bg-white rounded-xl shadow-md overflow-hidden mt-2 project-card transition-all duration-300">
                         <div class="md:flex">
@@ -130,15 +149,15 @@
                                 <img src="/api/placeholder/200/150" alt="Economic Impact Dashboard" class="h-48 w-full object-cover md:w-48"/>
                             </div>
                             <div class="p-4">
-                                <h5 class="font-bold text-indigo-600">Economic Impact Dashboard</h5>
+                                <h5 class="font-bold accent-color">Economic Impact Dashboard</h5>
                                 <div class="flex flex-wrap gap-2 mt-2 mb-3">
-                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Laravel</span>
-                                    <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Vue.js</span>
-                                    <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">MySQL</span>
-                                    <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded-full text-xs">AWS</span>
+                                    <span class="px-2 py-1 tag-bg-1 rounded-full text-xs">Laravel</span>
+                                    <span class="px-2 py-1 tag-bg-2 rounded-full text-xs">Vue.js</span>
+                                    <span class="px-2 py-1 tag-bg-3 rounded-full text-xs">MySQL</span>
+                                    <span class="px-2 py-1 tag-bg-4 rounded-full text-xs">AWS</span>
                                 </div>
-                                <p class="text-sm text-gray-600">Developed a dashboard for tracking economic initiatives and their outcomes across different regions.</p>
-                                <p class="text-sm text-indigo-600 mt-2 flex items-center">
+                                <p class="text-sm text-slate-600">Developed a dashboard for tracking economic initiatives and their outcomes across different regions.</p>
+                                <p class="text-sm accent-color mt-2 flex items-center">
                                     <i class="fas fa-link mr-1"></i>
                                     <a href="#" class="hover:underline">eic-dashboard.example.com</a>
                                 </p>
@@ -150,32 +169,32 @@
             
             <!-- Previous Role 1 -->
             <div class="mb-8">
-                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
-                    <h3 class="text-xl font-semibold text-gray-800">Laravel Developer</h3>
-                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>July 2023 - December 2023</p>
+                <div class="flex justify-between items-start border-l-4 border-slate-400 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-slate-800">Laravel Developer</h3>
+                    <p class="text-slate-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>July 2023 - December 2023</p>
                 </div>
-                <p class="text-gray-700 font-medium flex items-center ml-4 mt-1">
-                    <i class="fas fa-building mr-2 text-gray-500"></i> LogicRays Technologies Pvt. Ltd., Ahmedabad
+                <p class="text-slate-700 font-medium flex items-center ml-4 mt-1">
+                    <i class="fas fa-building mr-2 text-slate-500"></i> LogicRays Technologies Pvt. Ltd., Ahmedabad
                 </p>
-                <ul class="space-y-1 text-gray-600 mt-3 ml-4">
+                <ul class="space-y-1 text-slate-600 mt-3 ml-4">
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Worked with various international projects as dedicated and as a requirement basis</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Client communication, project requirement understanding and preparation of estimation</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Development with multiple technologies and management of source code versions and CI/CD deployment process</span>
                     </li>
                 </ul>
                 
                 <!-- Project Section -->
                 <div class="mt-4 ml-4">
-                    <h4 class="font-semibold text-gray-700 flex items-center">
-                        <i class="fas fa-project-diagram text-indigo-500 mr-2"></i> Project Highlight
+                    <h4 class="font-semibold text-slate-700 flex items-center">
+                        <i class="fas fa-project-diagram accent-color mr-2"></i> Project Highlight
                     </h4>
                     <div class="bg-white rounded-xl shadow-md overflow-hidden mt-2 project-card transition-all duration-300">
                         <div class="md:flex">
@@ -183,15 +202,15 @@
                                 <img src="/api/placeholder/200/150" alt="E-commerce Platform" class="h-48 w-full object-cover md:w-48"/>
                             </div>
                             <div class="p-4">
-                                <h5 class="font-bold text-indigo-600">International E-commerce Platform</h5>
+                                <h5 class="font-bold accent-color">International E-commerce Platform</h5>
                                 <div class="flex flex-wrap gap-2 mt-2 mb-3">
-                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Laravel</span>
-                                    <span class="px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs">Symfony</span>
-                                    <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">MySQL</span>
-                                    <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Alpine.js</span>
+                                    <span class="px-2 py-1 tag-bg-1 rounded-full text-xs">Laravel</span>
+                                    <span class="px-2 py-1 tag-bg-2 rounded-full text-xs">Symfony</span>
+                                    <span class="px-2 py-1 tag-bg-3 rounded-full text-xs">MySQL</span>
+                                    <span class="px-2 py-1 tag-bg-4 rounded-full text-xs">Alpine.js</span>
                                 </div>
-                                <p class="text-sm text-gray-600">Built a multi-currency e-commerce platform with localization support for an international client.</p>
-                                <p class="text-sm text-indigo-600 mt-2 flex items-center">
+                                <p class="text-sm text-slate-600">Built a multi-currency e-commerce platform with localization support for an international client.</p>
+                                <p class="text-sm accent-color mt-2 flex items-center">
                                     <i class="fas fa-link mr-1"></i>
                                     <a href="#" class="hover:underline">global-shop.example.com</a>
                                 </p>
@@ -203,32 +222,32 @@
             
             <!-- Previous Role 2 -->
             <div class="mb-8">
-                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
-                    <h3 class="text-xl font-semibold text-gray-800">Software Developer (Open Source)</h3>
-                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>June 2022 - July 2023</p>
+                <div class="flex justify-between items-start border-l-4 border-slate-400 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-slate-800">Software Developer (Open Source)</h3>
+                    <p class="text-slate-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>June 2022 - July 2023</p>
                 </div>
-                <p class="text-gray-700 font-medium flex items-center ml-4 mt-1">
-                    <i class="fas fa-building mr-2 text-gray-500"></i> Dev Information Technology Limited, Ahmedabad
+                <p class="text-slate-700 font-medium flex items-center ml-4 mt-1">
+                    <i class="fas fa-building mr-2 text-slate-500"></i> Dev Information Technology Limited, Ahmedabad
                 </p>
-                <ul class="space-y-1 text-gray-600 mt-3 ml-4">
+                <ul class="space-y-1 text-slate-600 mt-3 ml-4">
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Developed Web Applications Using PHP, Laravel, MySQL, PostgreSQL, jQuery Ajax, HTML, CSS</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Worked on Public Sector Projects for government departments</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <i class="fas fa-angle-right mt-1 mr-2 accent-color"></i>
                         <span>Understanding of Client's Requirement, Project Architecture, Database Designing, Security Auditing</span>
                     </li>
                 </ul>
                 
                 <!-- Project Section -->
                 <div class="mt-4 ml-4">
-                    <h4 class="font-semibold text-gray-700 flex items-center">
-                        <i class="fas fa-project-diagram text-indigo-500 mr-2"></i> Project Highlight
+                    <h4 class="font-semibold text-slate-700 flex items-center">
+                        <i class="fas fa-project-diagram accent-color mr-2"></i> Project Highlight
                     </h4>
                     <div class="bg-white rounded-xl shadow-md overflow-hidden mt-2 project-card transition-all duration-300">
                         <div class="md:flex">
@@ -236,15 +255,15 @@
                                 <img src="/api/placeholder/200/150" alt="Gujarat Tourism Portal" class="h-48 w-full object-cover md:w-48"/>
                             </div>
                             <div class="p-4">
-                                <h5 class="font-bold text-indigo-600">Gujarat Tourism Portal</h5>
+                                <h5 class="font-bold accent-color">Gujarat Tourism Portal</h5>
                                 <div class="flex flex-wrap gap-2 mt-2 mb-3">
-                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">PHP</span>
-                                    <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs">Laravel</span>
-                                    <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">PostgreSQL</span>
-                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">jQuery</span>
+                                    <span class="px-2 py-1 tag-bg-1 rounded-full text-xs">PHP</span>
+                                    <span class="px-2 py-1 tag-bg-2 rounded-full text-xs">Laravel</span>
+                                    <span class="px-2 py-1 tag-bg-3 rounded-full text-xs">PostgreSQL</span>
+                                    <span class="px-2 py-1 tag-bg-4 rounded-full text-xs">jQuery</span>
                                 </div>
-                                <p class="text-sm text-gray-600">Developed a comprehensive tourism portal for showcasing Gujarat's attractions, booking tours, and managing tourist information.</p>
-                                <p class="text-sm text-indigo-600 mt-2 flex items-center">
+                                <p class="text-sm text-slate-600">Developed a comprehensive tourism portal for showcasing Gujarat's attractions, booking tours, and managing tourist information.</p>
+                                <p class="text-sm accent-color mt-2 flex items-center">
                                     <i class="fas fa-link mr-1"></i>
                                     <a href="#" class="hover:underline">gujarat-tourism.example.gov.in</a>
                                 </p>
@@ -256,12 +275,12 @@
             
             <!-- Healthcare Experience (Condensed) -->
             <div>
-                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
-                    <h3 class="text-xl font-semibold text-gray-800">Healthcare Administration Experience</h3>
-                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>2011 - 2021</p>
+                <div class="flex justify-between items-start border-l-4 border-slate-400 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-slate-800">Healthcare Administration Experience</h3>
+                    <p class="text-slate-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>2011 - 2021</p>
                 </div>
-                <p class="text-gray-700 ml-4 mt-3">
-                    <i class="fas fa-hospital mr-2 text-indigo-500"></i>
+                <p class="text-slate-700 ml-4 mt-3">
+                    <i class="fas fa-hospital mr-2 accent-color"></i>
                     10 years of progressive experience in hospital administration across various healthcare facilities in Gujarat, including management during the COVID-19 pandemic.
                 </p>
             </div>
@@ -269,39 +288,39 @@
 
         <!-- Education Section -->
         <section class="px-6 pb-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                <i class="fas fa-graduation-cap text-indigo-600 mr-2"></i> Education
+            <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+                <i class="fas fa-graduation-cap accent-color mr-2"></i> Education
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <i class="fas fa-laptop-code text-indigo-500 mr-2"></i>
+                    <h3 class="text-lg font-semibold text-slate-800 flex items-center">
+                        <i class="fas fa-laptop-code accent-color mr-2"></i>
                         Computer Engineering
                     </h3>
-                    <p class="text-gray-700 flex items-center mt-2">
-                        <i class="fas fa-university mr-2 text-gray-500"></i>
+                    <p class="text-slate-700 flex items-center mt-2">
+                        <i class="fas fa-university mr-2 text-slate-500"></i>
                         Government Polytechnic (GTU), Ahmedabad
                     </p>
-                    <p class="text-gray-600 flex items-center mt-1">
-                        <i class="far fa-calendar-alt mr-2 text-gray-500"></i>
+                    <p class="text-slate-600 flex items-center mt-1">
+                        <i class="far fa-calendar-alt mr-2 text-slate-500"></i>
                         2012 - 2014
                     </p>
-                    <p class="text-gray-600 mt-1 text-sm">Coursework Completed up to 5th Sem.</p>
+                    <p class="text-slate-600 mt-1 text-sm">Coursework Completed up to 5th Sem.</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <i class="fas fa-microchip text-indigo-500 mr-2"></i>
+                    <h3 class="text-lg font-semibold text-slate-800 flex items-center">
+                        <i class="fas fa-microchip accent-color mr-2"></i>
                         Information Technology
                     </h3>
-                    <p class="text-gray-700 flex items-center mt-2">
-                        <i class="fas fa-university mr-2 text-gray-500"></i>
+                    <p class="text-slate-700 flex items-center mt-2">
+                        <i class="fas fa-university mr-2 text-slate-500"></i>
                         Industrial Training Institute, Ahmedabad
                     </p>
-                    <p class="text-gray-600 flex items-center mt-1">
-                        <i class="far fa-calendar-alt mr-2 text-gray-500"></i>
+                    <p class="text-slate-600 flex items-center mt-1">
+                        <i class="far fa-calendar-alt mr-2 text-slate-500"></i>
                         2009 - 2011
                     </p>
-                    <p class="text-gray-600 mt-1 text-sm">First Class, NCVT Board</p>
+                    <p class="text-slate-600 mt-1 text-sm">First Class, NCVT Board</p>
                 </div>
             </div>
         </section>
