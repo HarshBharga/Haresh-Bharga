@@ -3,93 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haresh Bharga - Portfolio</title>
+    <title>Haresh Bharga - Resume</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4f46e5, #3b82f6);
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-600 p-6">
-    <div class="max-w-4xl mx-auto">
-        <!-- Profile Section -->
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
-            <h1 class="text-3xl font-bold">Haresh Bharga</h1>
-            <p class="text-gray-400 mt-2">Software Engineer | Full Stack Developer</p>
-            <p class="mt-2">Highly skilled Software Engineer with expertise in full-stack development, specializing in PHP (Laravel, Symfony), Node.js (Express, Sequelize), and JavaScript frameworks (Vue.js, Alpine.js, jQuery). Strong background in database management and cloud infrastructure.</p>
-            <div class="mt-3 flex flex-wrap gap-2">
-                <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Full Stack Development</span>
-                <span class="bg-yellow-500 text-white px-3 py-1 rounded text-sm">Cloud Computing</span>
+<body class="bg-gray-50 font-sans">
+    <div class="container mx-auto p-6 max-w-5xl bg-white shadow-xl my-8 rounded-xl">
+        <!-- Header with gradient -->
+        <header class="rounded-t-lg pb-6 mb-6">
+            <div class="gradient-bg text-white rounded-lg p-6 mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h1 class="text-4xl font-bold">Haresh Bharga</h1>
+                        <p class="text-xl mt-2 opacity-90">Full-Stack Software Engineer</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 space-y-2">
+                        <p class="flex items-center"><i class="fas fa-map-marker-alt w-6"></i> Gandhinagar, Gujarat, India</p>
+                        <p class="flex items-center"><i class="fas fa-phone-alt w-6"></i> +91 9408669952</p>
+                        <p class="flex items-center"><i class="fas fa-envelope w-6"></i> hpbharga@gmail.com</p>
+                        <p class="flex items-center"><i class="fab fa-linkedin w-6"></i> LinkedIn</p>
+                    </div>
+                </div>
             </div>
-            <ul class="mt-3">
-                <li><strong>Languages:</strong> PHP, JavaScript, Node.js</li>
-                <li><strong>Location:</strong> Gandhinagar, Gujarat, India</li>
-            </ul>
-        </div>
+            <div class="px-6">
+                <p class="text-gray-700 leading-relaxed">Highly skilled Software Engineer specializing in PHP (Laravel, Symfony), Node.js (Express, Sequelize), and JavaScript frameworks (Vue.js, Alpine.js, jQuery). Strong background in database management and cloud infrastructure. Experienced in Microservices and Event-Driven Architecture.</p>
+            </div>
+        </header>
 
-        <!-- Experience and Projects Section -->
-        <div class="mt-8 bg-gray-800 p-6 rounded-2xl shadow-lg">
-            <h2 class="text-2xl font-bold">Experience & Projects</h2>
+        <!-- Skills Section -->
+        <section class="mb-8 px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-tools text-indigo-600 mr-2"></i> Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="font-semibold text-gray-700 flex items-center mb-3">
+                        <i class="fas fa-server text-indigo-500 mr-2"></i> Backend Development
+                    </h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> PHP (Laravel)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Node.js (Express.js)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> ORM: Sequelize, Eloquent</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> MySQL, PostgreSQL, MongoDB</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="font-semibold text-gray-700 flex items-center mb-3">
+                        <i class="fas fa-laptop-code text-indigo-500 mr-2"></i> Frontend Development
+                    </h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> JavaScript (ES6+)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> jQuery / AJAX</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Alpine.js</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Vue.js</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> HTML / CSS</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="font-semibold text-gray-700 flex items-center mb-3">
+                        <i class="fas fa-code-branch text-indigo-500 mr-2"></i> UI & Deployment
+                    </h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Bootstrap, Tailwind CSS</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Git</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> FTP / cPanel / SSH</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-8 px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-briefcase text-indigo-600 mr-2"></i> Work Experience
+            </h2>
             
-            <!-- Experience 1 -->
-            <div class="mt-6">
-                <h3 class="text-xl font-semibold">PHP Developer - Economic Impact Catalyst</h3>
-                <p class="text-gray-400">March 2024 – Present</p>
-                <p class="mt-2">Developing and optimizing web applications using Laravel, Node.js, and Vue.js. Managing database structures and cloud deployments.</p>
+            <!-- Current Role -->
+            <div class="mb-8">
+                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">PHP Developer</h3>
+                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>March 2024 - Present</p>
+                </div>
+                <p class="text-gray-700 font-medium flex items-center ml-4 mt-1">
+                    <i class="fas fa-building mr-2 text-gray-500"></i> Economic Impact Catalyst, Gandhinagar
+                </p>
+                <ul class="space-y-1 text-gray-600 mt-3 ml-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Developing and optimizing web applications and APIs using Laravel, Node.js, and Vue.js</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Managing database structures and cloud deployments for high-performance applications</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Collaborating with cross-functional teams to improve product scalability and user experience</span>
+                    </li>
+                </ul>
                 
-                <!-- Project 1 -->
-                <div class="mt-4 bg-gray-700 p-4 rounded-lg">
-                    <img src="https://via.placeholder.com/800x400" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold mt-2">Project Name</h3>
-                    <div class="flex flex-wrap gap-2 mt-2">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel" class="w-8 h-8">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="Node.js" class="w-8 h-8">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-plain.svg" alt="Vue.js" class="w-8 h-8">
+                <!-- Project Section -->
+                <div class="mt-4 ml-4">
+                    <h4 class="font-semibold text-gray-700 flex items-center">
+                        <i class="fas fa-project-diagram text-indigo-500 mr-2"></i> Project Highlight
+                    </h4>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mt-2 project-card transition-all duration-300">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img src="/api/placeholder/200/150" alt="Economic Impact Dashboard" class="h-48 w-full object-cover md:w-48"/>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="font-bold text-indigo-600">Economic Impact Dashboard</h5>
+                                <div class="flex flex-wrap gap-2 mt-2 mb-3">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Laravel</span>
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Vue.js</span>
+                                    <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">MySQL</span>
+                                    <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded-full text-xs">AWS</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Developed a dashboard for tracking economic initiatives and their outcomes across different regions.</p>
+                                <p class="text-sm text-indigo-600 mt-2 flex items-center">
+                                    <i class="fas fa-link mr-1"></i>
+                                    <a href="#" class="hover:underline">eic-dashboard.example.com</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="mt-2">Brief project description goes here.</p>
-                    <a href="#" class="text-blue-400 hover:underline block mt-3">View Project →</a>
                 </div>
             </div>
-
-            <!-- Experience 2 -->
-            <div class="mt-6">
-                <h3 class="text-xl font-semibold">Laravel Developer - LogicRays Technologies</h3>
-                <p class="text-gray-400">July 2023 – December 2023</p>
-                <p class="mt-2">Worked on international projects using Laravel, Symfony, Node.js, Vue.js, and handled CI/CD deployment processes.</p>
+            
+            <!-- Previous Role 1 -->
+            <div class="mb-8">
+                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">Laravel Developer</h3>
+                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>July 2023 - December 2023</p>
+                </div>
+                <p class="text-gray-700 font-medium flex items-center ml-4 mt-1">
+                    <i class="fas fa-building mr-2 text-gray-500"></i> LogicRays Technologies Pvt. Ltd., Ahmedabad
+                </p>
+                <ul class="space-y-1 text-gray-600 mt-3 ml-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Worked with various international projects as dedicated and as a requirement basis</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Client communication, project requirement understanding and preparation of estimation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Development with multiple technologies and management of source code versions and CI/CD deployment process</span>
+                    </li>
+                </ul>
                 
-                <!-- Project 2 -->
-                <div class="mt-4 bg-gray-700 p-4 rounded-lg">
-                    <img src="https://via.placeholder.com/800x400" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold mt-2">Project Name</h3>
-                    <div class="flex flex-wrap gap-2 mt-2">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP" class="w-8 h-8">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="MySQL" class="w-8 h-8">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" class="w-8 h-8">
+                <!-- Project Section -->
+                <div class="mt-4 ml-4">
+                    <h4 class="font-semibold text-gray-700 flex items-center">
+                        <i class="fas fa-project-diagram text-indigo-500 mr-2"></i> Project Highlight
+                    </h4>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mt-2 project-card transition-all duration-300">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img src="/api/placeholder/200/150" alt="E-commerce Platform" class="h-48 w-full object-cover md:w-48"/>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="font-bold text-indigo-600">International E-commerce Platform</h5>
+                                <div class="flex flex-wrap gap-2 mt-2 mb-3">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Laravel</span>
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs">Symfony</span>
+                                    <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">MySQL</span>
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Alpine.js</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Built a multi-currency e-commerce platform with localization support for an international client.</p>
+                                <p class="text-sm text-indigo-600 mt-2 flex items-center">
+                                    <i class="fas fa-link mr-1"></i>
+                                    <a href="#" class="hover:underline">global-shop.example.com</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="mt-2">Brief project description goes here.</p>
-                    <a href="#" class="text-blue-400 hover:underline block mt-3">View Project →</a>
                 </div>
             </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="mt-8 bg-gray-800 p-6 rounded-2xl shadow-lg text-center">
-            <h2 class="text-2xl font-bold">Contact</h2>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="mailto:hpbharga@gmail.com" class="text-blue-400">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" class="w-8 h-8">
-                </a>
-                <a href="tel:+919408669952" class="text-blue-400">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="Call" class="w-8 h-8">
-                </a>
-                <a href="https://wa.me/919408669952" class="text-blue-400">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8">
-                </a>
-                <a href="https://www.linkedin.com/in/haresh-bharga-ab78b443/" class="text-blue-400">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn" class="w-8 h-8">
-                </a>
+            
+            <!-- Previous Role 2 -->
+            <div class="mb-8">
+                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">Software Developer (Open Source)</h3>
+                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>June 2022 - July 2023</p>
+                </div>
+                <p class="text-gray-700 font-medium flex items-center ml-4 mt-1">
+                    <i class="fas fa-building mr-2 text-gray-500"></i> Dev Information Technology Limited, Ahmedabad
+                </p>
+                <ul class="space-y-1 text-gray-600 mt-3 ml-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Developed Web Applications Using PHP, Laravel, MySQL, PostgreSQL, jQuery Ajax, HTML, CSS</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Worked on Public Sector Projects for government departments</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-angle-right mt-1 mr-2 text-indigo-500"></i>
+                        <span>Understanding of Client's Requirement, Project Architecture, Database Designing, Security Auditing</span>
+                    </li>
+                </ul>
+                
+                <!-- Project Section -->
+                <div class="mt-4 ml-4">
+                    <h4 class="font-semibold text-gray-700 flex items-center">
+                        <i class="fas fa-project-diagram text-indigo-500 mr-2"></i> Project Highlight
+                    </h4>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mt-2 project-card transition-all duration-300">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img src="/api/placeholder/200/150" alt="Gujarat Tourism Portal" class="h-48 w-full object-cover md:w-48"/>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="font-bold text-indigo-600">Gujarat Tourism Portal</h5>
+                                <div class="flex flex-wrap gap-2 mt-2 mb-3">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">PHP</span>
+                                    <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs">Laravel</span>
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">PostgreSQL</span>
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">jQuery</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Developed a comprehensive tourism portal for showcasing Gujarat's attractions, booking tours, and managing tourist information.</p>
+                                <p class="text-sm text-indigo-600 mt-2 flex items-center">
+                                    <i class="fas fa-link mr-1"></i>
+                                    <a href="#" class="hover:underline">gujarat-tourism.example.gov.in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            
+            <!-- Healthcare Experience (Condensed) -->
+            <div>
+                <div class="flex justify-between items-start border-l-4 border-indigo-500 pl-4 pb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">Healthcare Administration Experience</h3>
+                    <p class="text-gray-600 flex items-center"><i class="far fa-calendar-alt mr-2"></i>2011 - 2021</p>
+                </div>
+                <p class="text-gray-700 ml-4 mt-3">
+                    <i class="fas fa-hospital mr-2 text-indigo-500"></i>
+                    10 years of progressive experience in hospital administration across various healthcare facilities in Gujarat, including management during the COVID-19 pandemic.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="px-6 pb-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-graduation-cap text-indigo-600 mr-2"></i> Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                        <i class="fas fa-laptop-code text-indigo-500 mr-2"></i>
+                        Computer Engineering
+                    </h3>
+                    <p class="text-gray-700 flex items-center mt-2">
+                        <i class="fas fa-university mr-2 text-gray-500"></i>
+                        Government Polytechnic (GTU), Ahmedabad
+                    </p>
+                    <p class="text-gray-600 flex items-center mt-1">
+                        <i class="far fa-calendar-alt mr-2 text-gray-500"></i>
+                        2012 - 2014
+                    </p>
+                    <p class="text-gray-600 mt-1 text-sm">Coursework Completed up to 5th Sem.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                        <i class="fas fa-microchip text-indigo-500 mr-2"></i>
+                        Information Technology
+                    </h3>
+                    <p class="text-gray-700 flex items-center mt-2">
+                        <i class="fas fa-university mr-2 text-gray-500"></i>
+                        Industrial Training Institute, Ahmedabad
+                    </p>
+                    <p class="text-gray-600 flex items-center mt-1">
+                        <i class="far fa-calendar-alt mr-2 text-gray-500"></i>
+                        2009 - 2011
+                    </p>
+                    <p class="text-gray-600 mt-1 text-sm">First Class, NCVT Board</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="gradient-bg text-white py-4 px-6 rounded-b-lg text-center text-sm mt-4">
+            <p>© 2025 Haresh Bharga | Software Engineer | <a href="https://github.com/yourusername" class="underline hover:text-white transition-colors duration-200"><i class="fab fa-github mr-1"></i>GitHub</a></p>
+        </footer>
     </div>
 </body>
 </html>
